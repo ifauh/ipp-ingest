@@ -13,6 +13,6 @@ do
   python3 ipp-psps.py $fits
   bash ipp-psps-pack.sh $batch
   gzip ${batch}_Detection.csv
-  echo scp ${batch}_Detection.csv.gz $ARCHIVE
+  scp ${batch}_Detection.csv.gz $ARCHIVE
   rm -rf *.csv B* *.gz
 done
